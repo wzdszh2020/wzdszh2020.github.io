@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzdszh2020.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-11-22T11:44:24.639Z</updated>
+    <title>Tiger</title>
+    <updated>2020-11-22T11:45:11.355Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzdszh2020.github.io"/>
     <link rel="self" href="https://wzdszh2020.github.io/atom.xml"/>
     <subtitle>我是一只小小猴</subtitle>
     <logo>https://wzdszh2020.github.io/images/avatar.png</logo>
     <icon>https://wzdszh2020.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, Tiger</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://wzdszh2020.github.io/post/hello-gridea/</id>
