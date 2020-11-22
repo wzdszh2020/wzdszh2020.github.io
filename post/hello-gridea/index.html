@@ -85,7 +85,13 @@
         <div class="mdui-container">
             <div class="mdui-row">
                 
-                <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
+                <a href="https://wzdszh2020.github.io/post/zhang-hu/" class="mdui-ripple mdui-color-theme mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
+                    <div class="doc-footer-nav-text">
+                        <i class="mdui-icon material-icons">arrow_back</i>
+                        <span class="doc-footer-nav-direction mdui-hidden-xs-down">上一篇文章</span>
+                        <div class="doc-footer-nav-chapter mdui-hidden-xs-down">张虎</div>
+                    </div>
+                </a>
                 
                 
                 <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
@@ -158,7 +164,13 @@
     let valine = new Valine({
         el: '.comment',
         
+        app_id: 'Tiger',
         
+        
+        app_key: 'wzdszh',
+        
+        
+        placeholder: 'hello wlocome',
         
         path: window.location.pathname,
         pageSize: 30,
