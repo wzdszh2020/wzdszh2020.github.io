@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzdszh2020.github.io</id>
     <title>Tiger</title>
-    <updated>2020-11-25T14:35:34.401Z</updated>
+    <updated>2020-11-26T07:52:43.771Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzdszh2020.github.io"/>
     <link rel="self" href="https://wzdszh2020.github.io/atom.xml"/>
@@ -11,14 +11,29 @@
     <icon>https://wzdszh2020.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Tiger</rights>
     <entry>
-        <title type="html"><![CDATA[张虎]]></title>
-        <id>https://wzdszh2020.github.io/post/zhang-hu/</id>
-        <link href="https://wzdszh2020.github.io/post/zhang-hu/">
+        <title type="html"><![CDATA[B(B-)树，B+树区别和优点]]></title>
+        <id>https://wzdszh2020.github.io/post/B-B+/</id>
+        <link href="https://wzdszh2020.github.io/post/B-B+/">
         </link>
         <updated>2020-11-22T12:06:20.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="熟读">熟读</h1>
-<p>张虎k</p>
-<h2 id="不知道">不知道</h2>
+        <content type="html"><![CDATA[<h2 id="m阶bb-树的特点">M阶B(B-)树的特点</h2>
+<pre><code>B树（Balance tree）和B+树应用在数据库索引，可以认为是M叉的多路平衡查找树，但是从理论上讲，二叉树查找速度和比较次数都是最小的，为什么不用二叉树呢？
+因为我们要考虑磁盘IO的影响，它相对于内存来说是很慢的。数据库索引是存储在磁盘上的，当数据量大时，就不能把整个索引全部加载到内存了，只能逐一加载每一个磁盘页（对应索引树的节点）。所以我们要减少IO次数，对于树来说，IO次数就是树的高度，而“矮胖”就是B树的特征之一，它的每个节点最多包含 M个孩子，M称为B树的阶，M的大小取决于磁盘页的大小。
+</code></pre>
+<p>特征：<br>
+1.定义任意非叶子结点最多只有M个儿子，且M&gt;2；<br>
+2.根结点的儿子数为[2, M]；<br>
+3.除根结点以外的非叶子结点的儿子数为[M/2, M]，向上取整；<br>
+4.非叶子结点的关键字个数=儿子数-1；<br>
+5.所有叶子结点位于同一层；<br>
+6.k个关键字把节点拆成k+1段，分别指向k+1个儿子，同时满足查找树的大小关系。<br>
+有关B树的一些特性，注意与后面的B+树区分：<br>
+(1)关键字集合分布在整颗树中；<br>
+(2)任何一个关键字出现且只出现在一个结点中；<br>
+(3)搜索有可能在非叶子结点结束；<br>
+(4)其搜索性能等价于在关键字全集内做一次二分查找；<br>
+如图是一个3阶b树，顺便讲一下查询元素5的过程：</p>
+<h2 id=""></h2>
 <p>行、</p>
 ]]></content>
     </entry>
